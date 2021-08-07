@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.accordion {
+	width: 90%;
+	max-width: 1000px;
+	margin: 5rem auto;
+}
+
+.accordion-item-1 a {
+	font-family: sans-serif;
+}
+
+.accordion-item {
+	margin: 20px;
+	padding: 20px;
+}
+.accordion-item-3 {
+	display: flex;
+}
+
+.text-1 {
+	padding: 15px;
+	line-height: 40px;
+}
+.to-do-list-container {
+	display: flex;
+    font-family: sans-serif;
+}
+
+.to-do-list {
+	line-height: 25px;
+}
+
+.accordion-item-container {
+	border-bottom: black;
+	background-color: rgba(252, 246, 246, 0.911);
+	padding: 15px;
+	margin-bottom: 25px;
+	display: flex;
+	font-size: 20px;
+}
+.accordion-item-container::after {
+	content: "\2B9F";
+	font-size: 15px;
+	position: relative;
+	left: 50rem;
+}
+
+.accordion-item-container.active::after {
+	content: "\2B9D";
+	font-size: 15px;
+}
+
+.accordion-item-2 {
+	display: none;
+}
+
+.accordion-item-2.active {
+	max-height: 200px;
+}
+
+.accordion-item-container.active + .accordion-item-2 {
+	display: block;
+}
